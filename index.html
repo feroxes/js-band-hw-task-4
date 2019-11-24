@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/app.css">
+    <title>js-band-hw-task-1</title>
+</head>
+<body>
+ <section class="forms-wrapper">
+     <div class="form-wrapper">
+         <form class="form" id="shipFrom">
+             <h1>Ship</h1>
+             <label for="ship_id">
+                 Id
+                 <input type="text" id="ship_id" name="ship_id">
+             </label>
+             <label for="ship_model">
+                 Model
+                 <input type="text" id="ship_model" name="ship_model">
+             </label>
+             <label for="ship_serialNumber">
+                 Serial Number
+                 <input type="text" id="ship_serialNumber" name="ship_serialNumber">
+             </label>
+             <label for="ship_producedYear">
+                 Produced Year
+                 <input type="text" id="ship_producedYear" name="ship_producedYear">
+             </label>
+             <label for="ship_capacity">
+                 Capacity
+                 <input type="text" id="ship_capacity" name="ship_capacity">
+             </label>
+             <label for="ship_averageSpeed">
+                 Average speed
+                 <input type="text" id="ship_averageSpeed" name="ship_averageSpeed">
+             </label>
+             <label for="ship_countOfTeam">
+                 Count of team
+                 <input type="text" id="ship_countOfTeam" name="ship_countOfTeam">
+             </label>
+             <button id="addShip" name="ship">Add new Ship</button>
+         </form>
+         <div id="ship_list"></div>
+     </div>
+     <div class="form-wrapper">
+         <form class="form" id="truckFrom">
+             <h1>Truck</h1>
+             <label for="truck_id">
+                 Id
+                 <input type="text" id="truck_id" name="truck_id">
+             </label>
+             <label for="truck_model">
+                 Model
+                 <input type="text" id="truck_model" name="truck_model">
+             </label>
+             <label for="truck_licensePlate">
+                 License plate
+                 <input type="text" id="truck_licensePlate" name="truck_licensePlate">
+             </label>
+             <label for="truck_producedYear">
+                 Produced Year
+                 <input type="text" id="truck_producedYear" name="truck_producedYear">
+             </label>
+             <label for="truck_capacity">
+                 Capacity
+                 <input type="text" id="truck_capacity" name="truck_capacity">
+             </label>
+             <label for="truck_averageSpeed">
+                 Average speed
+                 <input type="text" id="truck_averageSpeed" name="truck_averageSpeed">
+             </label>
+             <label for="truck_typeOfGas">
+                 Type of gas
+                 <input type="text" id="truck_typeOfGas" name="truck_typeOfGas">
+             </label>
+             <button id="addTruck" name="truck">Add new Truck</button>
+         </form>
+         <div id="truck_list"></div>
+     </div>
+     <div class="form-wrapper">
+         <form class="form" id="deliveryForm">
+             <h1>Delivery</h1>
+             <label for="delivery_transportModel">
+                 Transport Model
+                 <input type="text" id="delivery_transportModel" name="delivery_transportModel">
+             </label>
+             <label for="delivery_cargoCost">
+                 Cost (by 1 kg of cargo)
+                 <input type="text" id="delivery_cargoCost" name="delivery_cargoCost">
+             </label>
+             <label for="delivery_distanceCost">
+                 Cost (by 1 km of distance)
+                 <input type="text" id="delivery_distanceCost" name="delivery_distanceCost">
+             </label>
+
+             <button id="addDelivery" name="delivery">Add new Delivery</button>
+         </form>
+         <div id="delivery_list"></div>
+     </div>
+ </section>
+
+<script src="./dist/app.js"></script>
+</body>
+</html>
