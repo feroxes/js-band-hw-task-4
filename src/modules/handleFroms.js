@@ -20,6 +20,7 @@ const buttons = {
 const formatTransportKey = (str) => str.split('_')[1];
 
 const clearForm = (formInputs) => {
+  // eslint-disable-next-line no-cond-assign
   for (let i = 0, element; element = formInputs[i++];) {
     if (element.type === 'text') {
       element.value = '';
@@ -32,6 +33,7 @@ const addNewList = (e) => {
   const listName = e.target.name;
   const formInputs = forms[`${listName}Form`];
   const data = {};
+  // eslint-disable-next-line no-cond-assign
   for (let i = 0, element; element = formInputs[i++];) {
     if (element.type === 'text') {
       data[formatTransportKey(element.name)] = element.value;
