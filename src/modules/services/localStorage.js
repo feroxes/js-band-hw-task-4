@@ -5,7 +5,6 @@ class LocalStorage {
     }
   }
 
-  // eslint-disable-next-line class-methods-use-this
   getLocalList() {
     return {
       ship: JSON.parse(localStorage.getItem('shipList')),
@@ -14,7 +13,6 @@ class LocalStorage {
     };
   }
 
-  // eslint-disable-next-line class-methods-use-this
   saveItemToStorage(list, listName) {
     localStorage.setItem(`${listName}List`, JSON.stringify(list));
   }
